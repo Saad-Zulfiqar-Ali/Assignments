@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+header,
+footer {
+    background-color: #0b132b;
+}
+
+#hero-section {
+    background-image: url("https://i.redd.it/mzzr15a0oqra1.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    border: 2px solid blue;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transform: scaleY(1.03);
+    transition: all 0.3s;
+}
+
+.card img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.arrowicons {
+    width: 20%;
+    float: right;
+}
+
+
+#Planing-section {
+    background-color: #023047;
+    color: #ffffff;
+}
+
+#pricing-section .card img {
+    height: 100px;
+    width: 100px;
+}
+
+#pricing-section .card:hover {
+    background-color: #edf2f4;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    color: #000000;
+    transition: all 0.5s;
+}
+
+#pricing-section .mid-card {
+    background-color: #023047;
+    color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    .btn:hover {
+        background-color: #ffffff;
+        color: #023047;
+    }
+}
+
+#pricing-section .mid-card:hover {
+    background-color: #edf2f4;
+    color: #023047;
+    transition: all 0.5s;
+}
+
+#FAQs{
+    background-color: #023047;
+}

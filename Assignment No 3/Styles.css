@@ -1,0 +1,25 @@
+
+            #table{
+                background-color: #ade8f4;
+            }
+            #paragraph {
+
+                color: blue;
+            }
+            #heading {
+                color: #001011;
+            }
+            .tables 
+                 th, td {
+                    border: 1px solid black;
+                    border-radius: 10px;
+                width: fit-content;
+                height: fit-content;
+                  }
+#section {
+    background-color: #0b132b;
+
+}
+.bottom {
+    color: #560bad;
+}
