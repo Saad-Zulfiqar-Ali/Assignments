@@ -331,7 +331,30 @@ if (userNumber / userNumber === 0 ) {
     }    
 }
 
-//  27 :
+
+//  27:
+//  Write a js program to print all Prime numbers between 1 to n.
+
+function printAllThePrimeNumber() {
+
+    for (let i = 2; i <= 100; i++) {
+        let isPrime = true;
+
+        for (let a = 2; a <= Math.sqrt(i); a++) {
+            if (i % a === 0) {
+                isPrime = false;
+                break;
+ }
+}
+
+      if (isPrime) {
+         console.log(i);
+    }
+ }
+}
+
+
+//  28 :
 //  Write a js program to print all Prime numbers between 1 to n
 
 function SumAllPrimeNumber() {
@@ -359,4 +382,4 @@ function SumAllPrimeNumber() {
 }
 
 
-//  1 , 2 , 3 , 4 , 5 , 6 ,7 ,8 ,9 ,10 ,11 ,12 ,13 ,14 ,15 ,16 ,17 ,26 ,27  = 19 Done 
+//  1 , 2 , 3 , 4 , 5 , 6 ,7 ,8 ,9 ,10 ,11 ,12 ,13 ,14 ,15 ,16 ,17 ,26 ,27 ,28  = 20 Done 
