@@ -265,6 +265,21 @@ function sumOfDigits() {
 //  15 :
 //  Write a js program to calculate product of digits of a number.
 
+function productOfDigits() {
+
+    let i = prompt('Enter Any Number That You Wanna');
+  
+    let str = i.toString();
+  
+    product = 1;
+  
+    for (let a = 0; a < str.length; a++) {
+      product *= parseInt(str.charAt(a));
+
+    }
+  
+    console.log('The Product Of The Number Is: ' + product);
+  }
 
 //  16 :
 //  Write a js program to enter a number and print its reverse.
@@ -328,8 +343,4 @@ function SumAllPrimeNumber() {
 }
 
 
-
-
-
-
-//  1 , 2 , 3 , 4 , 5 , 6 ,7 ,8 ,9 ,10 ,11 ,12 ,13 ,14 ,  ,16 ,26 ,27  = 16 Done 
+//  1 , 2 , 3 , 4 , 5 , 6 ,7 ,8 ,9 ,10 ,11 ,12 ,13 ,14 ,15 ,16 ,26 ,27  = 18 Done 
