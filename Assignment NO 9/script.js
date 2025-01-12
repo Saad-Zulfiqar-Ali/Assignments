@@ -223,10 +223,8 @@ function swapNumber() {
          console.log("The First Digit Is Swap To Last : " + firstNum);
          console.log( "The Last Digit Is Swap To First : " + num);
 
-         
-         
-
 }
+
 
 //  14 :
 //  Write a js program to calculate sum of digits of a number.
@@ -262,6 +260,7 @@ function sumOfDigits() {
 
 }
 
+
 //  15 :
 //  Write a js program to calculate product of digits of a number.
 
@@ -295,6 +294,23 @@ function reverseNumber() {
     
 }
      
+//  17:
+//  Write a js program to check whether a number is palindrome or not.
+
+function checkNumberPalindrome(){
+
+        let i = prompt("Enter Any Number That You Wanna Check If it's A Palindrome Number Or Not")
+    
+        let str = i.toString();
+    
+        let reversedDigit = str.split('').reverse().join('');
+      
+        let result = (str === reversedDigit) ? i + " :It's A Palindrome Number" :i + " :It Isn't A  Palindrome Number" 
+
+    console.log(result);
+    
+
+}
 
 
 //  26 :
@@ -343,4 +359,4 @@ function SumAllPrimeNumber() {
 }
 
 
-//  1 , 2 , 3 , 4 , 5 , 6 ,7 ,8 ,9 ,10 ,11 ,12 ,13 ,14 ,15 ,16 ,26 ,27  = 18 Done 
+//  1 , 2 , 3 , 4 , 5 , 6 ,7 ,8 ,9 ,10 ,11 ,12 ,13 ,14 ,15 ,16 ,17 ,26 ,27  = 19 Done 
