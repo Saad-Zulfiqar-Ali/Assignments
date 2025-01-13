@@ -312,6 +312,23 @@ function checkNumberPalindrome(){
 
 }
 
+//  20 :
+//  Write a js program to print all ASCII character with their values.
+
+function printASCIICode() {
+
+    let str = '123456789';
+
+    for (let i = 1; i < str.length; i++) {
+      console.log(str.charCodeAt(i));
+    }
+    
+    
+
+    
+    
+}
+
 
 //  26 :
 //  Write a js program to check whether a number is Prime number or not.
@@ -383,3 +400,36 @@ function SumAllPrimeNumber() {
 
 
 //  1 , 2 , 3 , 4 , 5 , 6 ,7 ,8 ,9 ,10 ,11 ,12 ,13 ,14 ,15 ,16 ,17 ,26 ,27 ,28  = 20 Done 
+
+
+// 18. Write a js program to find frequency of each digit in a given integer.
+// 19. Write a js program to enter a number and print it in words.
+
+// 21. Write a js program to find power of a number using for loop.
+// 22. Write a js program to find all factors of a number.
+// 23. Write a js program to calculate factorial of a number.
+// 24. Write a js program to find HCF (GCD) of two numbers.
+// 25. Write a js program to find LCM of two numbers.
+// 29. Write a js program to find all prime factors of a number.
+// 30. Write a js program to check whether a number is Armstrong number or not.
+// 31. Write a js program to print all Armstrong numbers between 1 to n.
+// 32. Write a js program to check whether a number is Perfect number or not.
+// 33. Write a js program to print all Perfect numbers between 1 to n.
+// 34. Write a js program to check whether a number is Strong number or not.
+// 35. Write a js program to print all Strong numbers between 1 to n.
+// 36. Write a js program to print Fibonacci series up to n terms.
+// 37. Write a js program to find one's complement of a binary number.
+// 38. Write a js program to find two's complement of a binary number.
+// 39. Write a js program to convert Binary to Octal number system.
+// 40. Write a js program to convert Binary to Decimal number system.
+// 41. Write a js program to convert Binary to Hexadecimal number system.
+// 42. Write a js program to convert Octal to Binary number system.
+// 43. Write a js program to convert Octal to Decimal number system.
+// 44. Write a js program to convert Octal to Hexadecimal number system.
+// 45. Write a js program to convert Decimal to Binary number system.
+// 46. Write a js program to convert Decimal to Octal number system.
+// 47. Write a js program to convert Decimal to Hexadecimal number system.
+// 48. Write a js program to convert Hexadecimal to Binary number system.
+// 49. Write a js program to convert Hexadecimal to Octal number system.
+// 50. Write a js program to convert Hexadecimal to Decimal number system.
+// 51. Write a js program to print Pascal triangle upto n rows.
