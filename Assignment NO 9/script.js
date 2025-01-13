@@ -322,7 +322,29 @@ function printASCIICode() {
     }
 }
 
+//  23 :
+//  Write a js program to calculate factorial of a number.
 
+function factorial(n) {
+    if (n === 0 || n === 1) {
+      return 1;  
+    }
+  
+    let result = 1;
+    for (let i = 2; i <= n; i++) {
+      result *= i;
+    }
+    return result;
+  }
+  function factorialNumber() {
+    
+  
+  let num = prompt("Enter Any Number")
+    num = parseInt(number);
+        console.log(`Factorial of ${num} is: ${factorial(num)}`);
+  }
+
+ 
 
 //  26 :
 //  Write a js program to check whether a number is Prime number or not.
@@ -404,8 +426,6 @@ function SumAllPrimeNumber() {
 
 // 22. Write a js program to find all factors of a number.
 
-// 23. Write a js program to calculate factorial of a number.
-
 // 24. Write a js program to find HCF (GCD) of two numbers.
 
 // 25. Write a js program to find LCM of two numbers.
@@ -455,3 +475,20 @@ function SumAllPrimeNumber() {
 // 50. Write a js program to convert Hexadecimal to Decimal number system.
 
 // 51. Write a js program to print Pascal triangle upto n rows.
+
+function factorial(n) {
+    if (n === 0 || n === 1) {
+      return 1;  
+    }
+  
+    let result = 1;
+    for (let i = 2; i <= n; i++) {
+      result *= i;
+    }
+    return result;
+  }
+  
+
+  let num = prompt("Enter Any Number")
+  num = parseInt(number);
+  console.log(`Factorial of ${num} is: ${factorial(num)}`);
