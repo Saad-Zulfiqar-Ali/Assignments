@@ -322,26 +322,59 @@ function printASCIICode() {
     }
 }
 
+// 21. Write a js program to find power of a number using for loop.
+
+function findPower() {
+
+    let n = prompt("Enter Any Number That U Want To Check it's Power")
+    
+        let power = prompt("Enter Power Of The Number That U Wanna Check")
+
+        let num = 1;
+        for (let i = 0; i < power ; ++i ){
+                num *= n;
+        }
+
+    console.log(num);
+    
+}
+
+
+// 22. Write a js program to find all factors of a number.
+
+function printFactorOfNumber() {
+    
+
+    let n = prompt("Enter A Number Which You Want to Print Factors")
+
+    for (let i = 1; i < n; i++) {
+        if (n % i == 0) {
+            console.log(i);
+        }
+    }
+    console.log(n);
+}
 //  23 :
 //  Write a js program to calculate factorial of a number.
 
 function factorial(n) {
     if (n === 0 || n === 1) {
-      return 1;  
+        return 1;  
     }
   
-    let result = 1;
-    for (let i = 2; i <= n; i++) {
-      result *= i;
+        let result = 1;
+            for (let i = 2; i <= n; i++) {
+                result *= i;
     }
-    return result;
+        return result;
   }
+        
   function factorialNumber() {
     
   
-  let num = prompt("Enter Any Number")
-    num = parseInt(number);
-        console.log(`Factorial of ${num} is: ${factorial(num)}`);
+     let num = prompt("Enter Any Number")
+            num = parseInt(number);
+                console.log(`Factorial of ${num} is: ${factorial(num)}`);
   }
 
  
@@ -353,9 +386,9 @@ function checkNumber() {
 
     let userNumber = prompt("Enter Any Number To Check Weather Is Prime Number Or Not") 
 
-if (userNumber / userNumber === 0 ) {
-    console.log(`${userNumber} Is A Prime Number`);
-    }
+    if (userNumber / userNumber === 0 ) {
+        console.log(`${userNumber} Is A Prime Number`);
+}
 
     else{
         console.log(`${userNumber} It Isn't A Prime Number`);
@@ -415,16 +448,12 @@ function SumAllPrimeNumber() {
 }
 
 
-//  1 , 2 , 3 , 4 , 5 , 6 ,7 ,8 ,9 ,10 ,11 ,12 ,13 ,14 ,15 ,16 ,17 ,20 ,26 ,27 ,28  = 20 Done 
+//  1 , 2 , 3 , 4 , 5 , 6 ,7 ,8 ,9 ,10 ,11 ,12 ,13 ,14 ,15 ,16 ,17 ,20 ,21 ,22 ,23 ,26 ,27 ,28  = 24 Done 
 
 
 // 18. Write a js program to find frequency of each digit in a given integer.
 
 // 19. Write a js program to enter a number and print it in words.
-
-// 21. Write a js program to find power of a number using for loop.
-
-// 22. Write a js program to find all factors of a number.
 
 // 24. Write a js program to find HCF (GCD) of two numbers.
 
@@ -475,20 +504,3 @@ function SumAllPrimeNumber() {
 // 50. Write a js program to convert Hexadecimal to Decimal number system.
 
 // 51. Write a js program to print Pascal triangle upto n rows.
-
-function factorial(n) {
-    if (n === 0 || n === 1) {
-      return 1;  
-    }
-  
-    let result = 1;
-    for (let i = 2; i <= n; i++) {
-      result *= i;
-    }
-    return result;
-  }
-  
-
-  let num = prompt("Enter Any Number")
-  num = parseInt(number);
-  console.log(`Factorial of ${num} is: ${factorial(num)}`);
