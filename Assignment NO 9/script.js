@@ -81,11 +81,11 @@ function sumAllNaturalNumber() {
     sum = 0;
 
     while( i <= 100 ){
-        sum += i;
+         sum += i;
     
-    i++
+            i++
     }
-    console.log(sum);
+        console.log(sum);
     
 }
     //   7 :
@@ -95,15 +95,15 @@ function sumAllEvenNumber () {
     
 
     let i = 1;
-    sum = 0;
+        sum = 0;
 
     while( i <= 100 ){
         if( i % 2 == 0)
-        sum += i;
+            sum += i;
     
-    i++
+                 i++
     }
-    console.log(sum);
+        console.log(sum);
 }
 
 //  8 :
@@ -130,11 +130,11 @@ function sumAllOddNumber () {
 function table() {
     
     let i = prompt("Enter Any Number For It's Table")
-    i = parseInt(i);
+        i = parseInt(i);
     
 
     for (let a = 0; a <= 10; a++){
-console.log(`${i} x ${a} = ${ i * a}`);
+        console.log(`${i} x ${a} = ${ i * a}`);
 
 
     } 
@@ -149,7 +149,7 @@ function checkDigits() {
 
     let i = prompt("Enter Any Number")
 
-console.log("There Is : " + (i.length) + " Digits");
+        console.log("There Is : " + (i.length) + " Digits");
 
 }
 
@@ -322,7 +322,8 @@ function printASCIICode() {
     }
 }
 
-// 21. Write a js program to find power of a number using for loop.
+//  21 :
+//  Write a js program to find power of a number using for loop.
 
 function findPower() {
 
@@ -340,7 +341,8 @@ function findPower() {
 }
 
 
-// 22. Write a js program to find all factors of a number.
+//  22 :
+//  Write a js program to find all factors of a number.
 
 function printFactorOfNumber() {
     
