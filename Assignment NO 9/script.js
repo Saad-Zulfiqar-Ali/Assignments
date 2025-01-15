@@ -346,16 +346,17 @@ function findPower() {
 
 function printFactorOfNumber() {
     
-
     let n = prompt("Enter A Number Which You Want to Print Factors")
-
-    for (let i = 1; i < n; i++) {
-        if (n % i == 0) {
+    
+    let i = 1;
+     for (i = 1; i < n; i++) {
+        if (n % i === 0) {
             console.log(i);
         }
     }
-    console.log(n);
+    console.log(n);  
 }
+
 //  23 :
 //  Write a js program to calculate factorial of a number.
 
