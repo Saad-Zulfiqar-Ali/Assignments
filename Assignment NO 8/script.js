@@ -234,7 +234,7 @@ function inputAlphabet() {
         console.log((inputUserAlphabet) + " Is A Vowel" );
     }
 
-     // // If User Input Other Alphabet Then Vowel 
+ // If User Input Other Alphabet Then Vowel 
 
         else {console.log((inputUserAlphabet) + " Isn't a Vowel");
         }
@@ -310,76 +310,48 @@ if (userInputData.length !== 1){
 // 11: 
 // Write a js program to input week number and print week day.
 
-function weekDays() {
-  
-    var inputWeekNumber = prompt ("Enter 1 to 7 For Week Day")
+function checkDay() {
 
-// Convert Text To Number So User Can Enter Only Number
+    let day = prompt("Enter Any Number Between 1 To 7")
 
-    inputWeekNumber = parseInt(inputWeekNumber)
-  
-    // If User Input Rather Then 1 to 7
+        day = parseInt(day)
 
-if (inputWeekNumber !== 1 && inputWeekNumber !== 2 && inputWeekNumber !== 3 && inputWeekNumber !== 4 && inputWeekNumber !== 5 && inputWeekNumber !== 6 && inputWeekNumber !== 7){
-    console.log("Enter 1 to 7 Not " + inputWeekNumber);
+    switch (day) {
+        case 1:
+            console.log("It's Monday");
+                break;
     
+        case 2:
+            console.log("It's tuesday");
+                break;
+    
+        case 3:
+            console.log("It's Wednesday");
+                break;
+    
+        case 4:
+            console.log("It's Thursday");
+              break;
+
+        case 5:
+            console.log("It's Friday");
+                break;
+    
+
+        case 6:
+            console.log("It's Saturday");
+                break;
+    
+        case 7:
+            console.log("It's Sunday");
+                break;
+    
+        default:
+            console.log(`${day} It's Not A Day`);
+            
+    }
 }
 
-
-// IF User Input 1
-
-     else if (inputWeekNumber === 1) {
-        console.log("Monday");  
-    }
-
-    // IF User Input 2
-
-    else if (inputWeekNumber === 2) {
-        console.log("Tuesday");
-  
-    }
-     
-    // IF User Input 3
-
-    else if (inputWeekNumber === 3){
-        console.log("Wednesday");
-        
-    }
-
-     // IF User Input 4
-
-
-    else if (inputWeekNumber === 4) {
-        console.log("thursday");
-  
-    }
-
-       // IF User Input 5
-
-    else if (inputWeekNumber === 5){
-        console.log("Friday");
-    }
-
-    // IF User Input 6
-
-    else if (inputWeekNumber === 6){
-    console.log("Saturday");
- 
-    }
-
-     // IF User Input 7
-
-    else if (inputWeekNumber === 7){
-    console.log("Sunday");
-    
-     }
-     // If User Input Rather Then 1 to 7
-
-    else {
-        console.log("Invalid Number");
-        
-    }
-}
 
 
     // 12 : 
@@ -387,87 +359,126 @@ if (inputWeekNumber !== 1 && inputWeekNumber !== 2 && inputWeekNumber !== 3 && i
 
     function CheckMonthDays() {
         
-        var inputMoth = prompt("Enter Month Or Month Number")
-
+        let inputMoth = prompt("Enter Month Or Month Number")
+    
         // If User Input 1 Or January
-
-        if (inputMoth === "January" || inputMoth === "january" || inputMoth === '1') {
-            console.log("January Have 31 Days");
+    
+        switch  (inputMoth) {
+    
+            case "January":
+                case"january":
+                    case'1':
+                         console.log("January: Have 31 Days");
             
-        }
-
+            break;
+        
+    
         // If User Input 2 Or February
-
-        else if (inputMoth === "february" || inputMoth === "February" || inputMoth === '2') {
-            console.log("February have 29 Days In 2025 Year");
-            
-        }
+    
+            case "february" :
+                case "February" :
+                    case "2" :
+                         console.log("February: have 29 Days In 2025 Year");
+            break;
+        
         
           // If User Input 3 Or March 
-
-        else if (inputMoth === "March" || inputMoth === "march" || inputMoth === '3') {
-            console.log("March have 31 Days");
-    }
-
+    
+          case "March":
+                case "march":
+                    case "3" :
+                        console.log("March: have 31 Days");
+                         break;
+    
+    
      // If User Input 4 Or April
-
-         else if (inputMoth === "April" || inputMoth === "april" || inputMoth === '4') {
-        console.log("April have 30 Days");
-        }
-
+    
+                case "April":
+                    case "april":
+                        case "4":
+                            console.log("April: have 30 Days");
+                             break;
+    
         // If User Input 5 Or May
-
-         else if (inputMoth === "May" || inputMoth === "may" || inputMoth === '5') {
-        console.log("May have 31 Days");
-         }
-
+    
+                case "May":
+                    case "may":
+                        case "5":
+                            console.log("May: have 31 Days");
+                                break;
+    
          //If User Input 6 Or June
-
-         else if (inputMoth === "June" || inputMoth === "june" || inputMoth === '6') {
-        console.log("June have 30 Days");
-         }
-
+    
+                    case "June":
+                        case "june":
+                            case "6":
+                                console.log("June: have 30 Days");
+                                    break;
+                                
+    
          // If User Input 7 Or July
-
-         else if (inputMoth === "July" || inputMoth === "july" || inputMoth === '7') {
-        console.log("July have 31 Days");
-         }
-
+    
+                case "July":
+                    case "july":
+                        case "7":
+                            console.log("July: have 31 Days");
+                                break;                        
+    
+    
          // If User Input 8 Or August
-
-         else if (inputMoth === "August" || inputMoth === "august" || inputMoth === '8') {
-        console.log("August have 31 Days");
-         }
-
+    
+            case "August" :
+                case "august":
+                    case "8":
+                        console.log("August: have 31 Days");
+                        break;
+    
+    
          // If User Input 9 Or September
-
-         else if (inputMoth === "September" || inputMoth === "september" || inputMoth === '9') {
-        console.log("September have 30 Days");
-         }
-
+    
+            case "September":
+                case "september":
+                case "9":
+                    console.log("September: have 30 Days");
+                    break;
+                    
+    
          // IF User Input 10 Or October
-
-         else if (inputMoth === "October" || inputMoth === "october" || inputMoth === '10') {
-        console.log("October have 31 Days");
-         }
-
+    
+                case "October":
+                    case "october":
+                        case "10":
+                            console.log("October: have 31 Days");
+                                break;
+                            
+    
+    
          // If User Input November Or 11
-
-         else if (inputMoth === "November" || inputMoth === "november" || inputMoth === '11') {
-             console.log("November have 30 Days");
-         }
-
+    
+                case "November":
+                    case "november":
+                        case "11":
+                            console.log("November: Have 30 Days");
+                                break;
+                            
+    
           // IF User Input December OR 12
-
-         else if (inputMoth === "December" || inputMoth === "december" || inputMoth === '12') {
-        console.log("December have 31 Days");
-         }
-
+    
+                case "December":
+                    case  "december":
+                        case "12":
+                            console.log("December: have 31 Days");
+                                break;                        
+    
+    
           // If No Condition Match Then
-
-         else {console.log("Invalid Month");
-         }
-}
+    
+                default:
+                    console.log(`It Isn't A Number:  ${inputMoth}`);
+                    
+    
+    }
+    }
 
 // 14 :
 // Write a js program to input angles of a triangle and check whether triangle is valid or not

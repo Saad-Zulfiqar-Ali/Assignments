@@ -240,9 +240,10 @@ function coinToss(){
     }
 }
 
-coinToss();
+
 
 // 9. Weather Suggestion Experiment
+
 function weatherSuggestion() {
     
 
