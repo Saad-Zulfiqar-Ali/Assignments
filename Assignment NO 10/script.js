@@ -50,6 +50,25 @@ function stringToAnother() {
 
 // 4. Write a js program to compare two strings.
 
+function compareStrings() {
+
+    let userInput1 = prompt("Enter AnyThing")
+    let userInput2 = prompt("Enter AnyThing")
+
+    if (userInput1 === userInput2) {
+        console.log(`${userInput1} ${userInput2} Both Are Same`);
+        
+        
+    }
+
+    else {
+        console.log(`${userInput1} ${userInput2} Both Aren't Same`);
+
+        
+    }
+    
+}
+
 
 // 5. Write a js program to convert lowercase string to uppercase.
 
@@ -94,6 +113,37 @@ function convertToLowerCase() {
 
 // 7. Write a js program to toggle case of each character of a string.
 
+    function toggleChar() {
+
+        let userInput = prompt("Enter AnyThing")
+
+     let toggledString = '';
+
+        for (let i = 0; i < userInput.length; i++) {
+            let char= userInput[i];   
+            
+
+            if (char >= "A" && char <= 'Z') {
+                toggledString += char.toLowerCase();
+            
+            
+        }
+        else  if (char >= "a" && char <= "z") {
+            toggledString += char.toUpperCase();
+
+        }
+
+        else {
+            toggledString += char;
+            
+        }
+        
+    }
+
+    console.log(toggledString);
+    
+}
+
 // 8. Write a js program to find total number of alphabets, digits or special character in a string.
 
 // 9. Write a js program to count total number of vowels and consonants in a string.
@@ -133,8 +183,35 @@ function reverseString() {
 
 // 12. Write a js program to check whether a string is palindrome or not.
 
+function checkPalindrome(){
+
+    let i = prompt("Enter Any Number That You Wanna Check If it's A Palindrome Number Or Not")
+
+        let str = i.toString();
+
+            let reversedDigit = str.split('').reverse().join('');
+  
+                 let result = (str === reversedDigit) ? i + " :It's A Palindrome Number" :i + " :It Isn't A  Palindrome Number" 
+
+                    console.log(result);
+
+
+}
+
 // 13. Write a js program to reverse order of words in a given string.
 
+function reverseString() {
+
+    let i = prompt("Enter Any Number That You Wanna Check If it's A Palindrome Number Or Not")
+
+            let str = i.toString();
+
+                 let reversedDigit = str.split('').reverse().join('');
+
+                 console.log(`${i} The Reverse Order Is ${reversedDigit}`);
+                 
+    
+}
 
 
 // 14. Write a js program to find first occurrence of a character in a given string.
@@ -161,6 +238,32 @@ function findFirstChar() {
 
 // 15. Write a js program to find last occurrence of a character in a given string.
 
+function findLastChar() {
+
+    let userInput = prompt("Enter Data That You Want")
+
+        if (userInput === null){
+             console.log("There Isn't Any Input Provide");
+    
+}
+
+        else if (userInput === ''){
+            console.log("The String Is Empty Please Provide With Number And Alphabet");
+        }
+
+            else {
+
+                let lastChar = userInput[userInput.length - 1]
+
+                    console.log(`${userInput} The Last Digit Is ${lastChar} `);
+                    
+            }
+
+            
+    
+    
+}
+
 
 // 16. Write a js program to search all occurrences of a character in given string.
 
@@ -174,7 +277,30 @@ function findFirstChar() {
 
 // 21. Write a js program to remove first occurrence of a character from string.
 
+function removeFirstChar() {
+
+        let userInput = prompt("Type AnyThing")
+
+            removeFirstDigit = userInput.slice(1)
+
+                console.log(`${userInput} Remove First character ${removeFirstDigit}`);
+                
+    
+}
+
 // 22. Write a js program to remove last occurrence of a character from string.
+
+function removeLastChar() {
+
+    let userInput = prompt("Type AnyThing")
+
+        removeLastDigit = userInput.slice(0 , userInput.length - 1)
+
+
+            console.log(`${userInput} Remove First character ${removeLastDigit}`);
+            
+
+}
 
 // 23. Write a js program to remove all occurrences of a character from string.
 
@@ -202,9 +328,66 @@ function findFirstChar() {
 
 // 35. Write a js program to trim leading white space characters from given string.
 
+function trimLeading() {
+
+    let userInput = prompt("Type AnyThing")
+
+        if (userInput === null){
+            console.log("There Isn't Any Input Provide");
+
+}
+
+         else {
+
+             console.log(`${userInput} To ${userInput.trimStart}`);
+
+}
+    
+    
+}
+
 // 36. Write a js program to trim trailing white space characters from given string.
 
+function trimTrailing() {
+
+    let userInput = prompt("Type AnyThing")
+
+    if (userInput === null){
+        console.log("There Isn't Any Input Provide");
+
+}
+
+         else {
+
+             console.log(`${userInput} To ${userInput.trimEnd}`);
+
+}
+
+    
+    
+}
+
 // 37. Write a js program to trim both leading and trailing white space characters from given string.
+
+function removeSpace(){
+
+    let userInput = prompt("Type AnyThing")
+
+    let trimChar = userInput.trimStart ( userInput.trimEnd)
+
+    if (userInput === null){
+        console.log("There Isn't Any Input Provide");
+
+}
+
+      else {
+
+            console.log(`${userInput}  To ${trimChar}`);   
+}
+
+
+}
+
 
 // 38. Write a js program to remove all extra blank spaces from given string.
 
@@ -227,4 +410,4 @@ function removeSpace(){
 
 
 
-// 1 ,2 ,3 ,5 ,6 ,10 ,11 ,14 ,38 = 9 Done
+// 1 ,2 ,3 ,4 ,5 ,6 ,7 ,10 ,11 ,12 ,13 ,14 ,15 ,21 ,22 ,35 ,36 ,37 ,38 = 19 Done
