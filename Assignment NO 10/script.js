@@ -124,23 +124,23 @@ function convertToLowerCase() {
             
 
             if (char >= "A" && char <= 'Z') {
-                toggledString += char.toLowerCase();
+                 toggledString += char.toLowerCase();
             
             
         }
         else  if (char >= "a" && char <= "z") {
-            toggledString += char.toUpperCase();
+              toggledString += char.toUpperCase();
 
         }
 
-        else {
-            toggledString += char;
+         else {
+              toggledString += char;
             
         }
         
     }
 
-    console.log(toggledString);
+                console.log(toggledString);
     
 }
 
@@ -275,6 +275,7 @@ function findLastChar() {
 
 // 20. Write a js program to count frequency of each character in a string.
 
+
 // 21. Write a js program to remove first occurrence of a character from string.
 
 function removeFirstChar() {
@@ -334,15 +335,45 @@ function printFirstOccurrence(){
 
     let userInput = prompt("Enter AnyThing")
 
-    let wordFind = prompt("Enter The Word That You Want To Find")
+            let wordFind = prompt("Enter The Word That You Want To Find")
 
-    result = firstOccurrence(userInput , wordFind);
+             result = firstOccurrence(userInput , wordFind);
 
-    console.log(result);
+                    console.log(result);
     
 }
 
 // 29. Write a js program to find last occurrence of a word in a given string.
+
+function LastOccurrence(str , word) {
+
+    let index = str.lastIndexOf(word)
+
+    if (index !== -1) {
+            return (`The First Word That Occurrence Is ${word} In The Index OF ${index}`);
+        
+        
+    }
+    else {
+            return (`There is No Word In The String OF ${word}`);
+        
+    }
+
+
+}
+function printLastOccurrence(){
+
+    let userInput = prompt("Enter AnyThing")
+
+          let wordFind = prompt("Enter The Word That You Want To Find")
+
+            result = LastOccurrence(userInput , wordFind);
+
+                 console.log(result);
+    
+}
+    
+
 
 // 30. Write a js program to search all occurrences of a word in given string.
 
@@ -350,7 +381,63 @@ function printFirstOccurrence(){
 
 // 32. Write a js program to remove first occurrence of a word from string.
 
+function removeFirstOccurrence(str , word) {
+
+    let index = str.IndexOf(word)
+
+    if (index !== -1) {
+            return (`The First Word That Occurrence Is ${word} In The Index OF ${index}`);
+        
+        
+    }
+    else {
+            return (`There is No Word In The String OF ${word}`);
+        
+    }
+
+
+}
+function printLastOccurrence(){
+
+    let userInput = prompt("Enter AnyThing")
+
+        let wordFind = prompt("Enter The Word That You Want To Find")
+
+             result = removeFirstOccurrence(userInput , wordFind.replace(" "));
+
+                 console.log(`${result}: The Word Remove Is : ${wordFind}`);
+    
+}
+
 // 33. Write a js program to remove last occurrence of a word in given string.
+
+function LastOccurrence(str , word) {
+
+    let index = str.lastIndexOf(word)
+
+    if (index !== -1) {
+            return (`The First Word That Occurrence Is ${word} In The Index OF ${index}`);
+        
+        
+    }
+    else {
+            return (`There is No Word In The String OF ${word}`);
+        
+    }
+
+
+}
+function removeLastOccurrence(){
+
+    let userInput = prompt("Enter AnyThing")
+
+         let wordFind = prompt("Enter The Word That You Want To Find")
+
+            result = removeFirstOccurrence(userInput , wordFind.replace(" "));
+
+                 console.log(`${result} : The Word Remove Is : ${wordFind}`);
+    
+}
 
 // 34. Write a js program to remove all occurrence of a word in given string.
 
@@ -430,7 +517,7 @@ function removeSpace(){
 
       else {
 
-            console.log(`${userInput}  To ${userInput.trim}`);   
+            console.log(`${userInput}  To ${userInput.trim}`); 
 }
 
 
@@ -438,4 +525,4 @@ function removeSpace(){
 
 
 
-// 1 ,2 ,3 ,4 ,5 ,6 ,7 ,10 ,11 ,12 ,13 ,14 ,15 ,21 ,22 ,28 ,35 ,36 ,37 ,38 = 20 Done Out Of 38
+// 1 ,2 ,3 ,4 ,5 ,6 ,7 ,10 ,11 ,12 ,13 ,14 ,15 ,21 ,22 ,28 ,29 ,32 ,33 ,35 ,36 ,37 ,38 = 23 Done Out Of 38
