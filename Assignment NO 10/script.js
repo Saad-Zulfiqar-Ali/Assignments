@@ -314,6 +314,34 @@ function removeLastChar() {
 
 // 28. Write a js program to find first occurrence of a word in a given string.
 
+function firstOccurrence (str , word){
+
+    let index = str.indexOf(word)
+
+    if (index !== -1) {
+            return (`The First Word That Occurrence Is ${word} In The Index OF ${index}`);
+        
+        
+    }
+    else {
+            return (`There is No Word In The String OF ${word}`);
+        
+    }
+
+
+}
+function printFirstOccurrence(){
+
+    let userInput = prompt("Enter AnyThing")
+
+    let wordFind = prompt("Enter The Word That You Want To Find")
+
+    result = firstOccurrence(userInput , wordFind);
+
+    console.log(result);
+    
+}
+
 // 29. Write a js program to find last occurrence of a word in a given string.
 
 // 30. Write a js program to search all occurrences of a word in given string.
@@ -410,4 +438,4 @@ function removeSpace(){
 
 
 
-// 1 ,2 ,3 ,4 ,5 ,6 ,7 ,10 ,11 ,12 ,13 ,14 ,15 ,21 ,22 ,35 ,36 ,37 ,38 = 19 Done
+// 1 ,2 ,3 ,4 ,5 ,6 ,7 ,10 ,11 ,12 ,13 ,14 ,15 ,21 ,22 ,28 ,35 ,36 ,37 ,38 = 20 Done Out Of 38
