@@ -148,6 +148,44 @@ function convertToLowerCase() {
 
 // 9. Write a js program to count total number of vowels and consonants in a string.
 
+function countVowels(str) {
+
+    str = str.toLowerCase();
+
+    let vowels = 'aeiou';
+        let vowelsCount = 0;
+            let consonantsCount = 0;
+
+
+    for (let i = 0; i < str.length; i++) {
+        let char = str[i];
+
+        if (char >= 'a' && char <= 'z') {
+
+            if (vowels.includes(char)) {
+                vowelsCount++;
+            } else {
+
+                consonantsCount++;
+            }
+        }
+    }
+
+
+         console.log(`Total Vowel Count Is: ${vowelsCount}`);
+             console.log(`Total Consonants Count Is: ${consonantsCount}`);
+}
+
+function countTotalVowelUsed() {
+
+    let userInput = prompt("Enter Anything:");
+
+        countVowels(userInput);
+}
+
+countTotalVowelUsed();
+
+
 // 10. Write a js program to count total number of words in a string.
 
 function countNumbers() {
@@ -305,6 +343,16 @@ function removeLastChar() {
 
 // 23. Write a js program to remove all occurrences of a character from string.
 
+function removeAllOccurrences(){
+
+    let userInput = prompt("Enter AnyThing")
+        let wordRemove = prompt(`Enter The Word That You Want To Remove`)
+            removeOccurrences = userInput.slice(wordRemove).join(``)
+                console.log(removeOccurrences);
+                
+
+}
+
 // 24. Write a js program to remove all repeated characters from a given string.
 
 // 25. Write a js program to replace first occurrence of a character with another in a string.
@@ -441,6 +489,16 @@ function removeLastOccurrence(){
 
 // 34. Write a js program to remove all occurrence of a word in given string.
 
+function removeAllOccurrence(){
+
+    let userInput = prompt("Enter AnyThing")
+        let wordRemove = prompt("Enter The Word That You Want To Remove")
+            removeWord = userInput.split(wordRemove).join("")
+
+                console.log(removeWord);
+                
+}
+
 // 35. Write a js program to trim leading white space characters from given string.
 
 function trimLeading() {
@@ -525,4 +583,4 @@ function removeSpace(){
 
 
 
-// 1 ,2 ,3 ,4 ,5 ,6 ,7 ,10 ,11 ,12 ,13 ,14 ,15 ,21 ,22 ,28 ,29 ,32 ,33 ,35 ,36 ,37 ,38 = 23 Done Out Of 38
+// 1 ,2 ,3 ,4 ,5 ,6 ,7 ,9 ,10 ,11 ,12 ,13 ,14 ,15 ,21 ,22 ,23 ,28 ,29 ,32 ,33 ,34 ,35 ,36 ,37 ,38 = 26 Done Out Of 38
