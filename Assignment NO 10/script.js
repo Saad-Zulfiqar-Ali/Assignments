@@ -146,6 +146,39 @@ function convertToLowerCase() {
 
 // 8. Write a js program to find total number of alphabets, digits or special character in a string.
 
+
+function totalNumber() {
+
+  let userInput = prompt("Enter AnyThing")
+    
+        let alphabetCount = 0;
+            let numberCount = 0;
+            let specialCharacter = 0;
+
+
+
+    for (let i = 0; i < userInput.length; i++) {
+        let char = userInput[i];
+
+      if (char >= `A` && char <= `Z` || char >= `a` && char <= `z`) {
+
+        alphabetCount++
+      }
+      else if (char >= 0 && char <= 9 ){
+        numberCount++
+      }
+      else {
+        specialCharacter++
+      }
+    }
+
+
+         console.log(`The Total Number Of Alphabets Are: ${alphabetCount}`);
+             console.log(`The Total Number Of Number Are: ${numberCount}`);
+                console.log(`The Total Number Of Special Character Are: ${specialCharacter}`);
+                
+}
+
 // 9. Write a js program to count total number of vowels and consonants in a string.
 
 function countVowels(str) {
@@ -305,7 +338,70 @@ function findLastChar() {
 
 // 16. Write a js program to search all occurrences of a character in given string.
 
+
+function searchOccurrences(str) {
+
+    let str = prompt("Enter AnyThing")
+        let charToSearch = prompt(`Enter The Word That You Wanna Check `)
+    
+            if (charToSearch.length !== 1) {
+                console.log(`Please Enter Only One Word`);
+                return;
+                
+                
+            }
+
+            let position = []
+    
+                 for (let i = 0; i < str.length; i++) {
+                    if (str[i].toLowerCase() === charToSearch.toLowerCase()) {
+                         position.push(i);
+                    }
+                   
+                    
+                }
+
+                if (position > 0 ){
+                        console.log(`The Character ${charToSearch} Is Found At The Position Of ${position.join(`, `)}`);
+                        
+                }
+                else{
+                    console.log(`The Character ${charToSearch} Does Not Found In ${position}`);
+                    
+                }
+
+                
+    
+    }
+
 // 17. Write a js program to count occurrences of a character in given string.
+
+
+function countOccurrences(str) {
+
+    let str = prompt("Enter AnyThing")
+        let charToSearch = prompt(`Enter The Word That You Wanna Check `)
+    
+            if (charToSearch.length !== 1) {
+                console.log(`Please Enter Only One Word`);
+                return;
+                
+                
+            }
+                let countOccurrences = 0;
+    
+                 for (let i = 0; i < str.length; i++) {
+                    if (str[i].toLowerCase() === charToSearch.toLowerCase()) {
+                         occurrencesCount++;
+                    }
+                   
+                    
+                }
+    
+                        console.log(`The Word ${charToSearch} Appear ${countOccurrences} In The ${str}`);
+                
+    
+    }
 
 // 18. Write a js program to find highest frequency character in a string.
 
@@ -583,4 +679,4 @@ function removeSpace(){
 
 
 
-// 1 ,2 ,3 ,4 ,5 ,6 ,7 ,9 ,10 ,11 ,12 ,13 ,14 ,15 ,21 ,22 ,23 ,28 ,29 ,32 ,33 ,34 ,35 ,36 ,37 ,38 = 26 Done Out Of 38
+// 1 ,2 ,3 ,4 ,5 ,6 ,7 ,8 ,9 ,10 ,11 ,12 ,13 ,14 ,15 ,16 ,21 ,22 ,23 ,26 ,28 ,29 ,32 ,33 ,34 ,35 ,36 ,37 ,38 = 29 Done Out Of 38
