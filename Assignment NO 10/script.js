@@ -453,7 +453,36 @@ function removeAllOccurrences(){
 
 // 25. Write a js program to replace first occurrence of a character with another in a string.
 
+
+function replaceFirstChar() {
+
+    let userInput = prompt("Type AnyThing")
+        let removeWord = prompt(`Enter The Word That You Want To Replace`)
+            let replaceWord = prompt(`Enter The Word That You Want To Replace With `)
+
+        replaceFirstDigit = userInput.replace(removeWord , replaceWord)
+
+            console.log(`User Input :{userInput}`);
+            console.log(`Replace The First character : ${replaceFirstDigit}`);
+            
+}
+
 // 26. Write a js program to replace last occurrence of a character with another in a string.
+
+function replaceLastCharacter() {
+
+    let userInput = prompt('Type AnyThing');
+       let removeWord = prompt(`Enter The Word That You Want To Replace`);
+         let replaceWord = prompt(`Enter The Word That You Want To Replace With `);
+            lastIndex = userInput.lastIndexOf(removeWord);
+    
+            let replaced = userInput.slice(0, lastIndex) + replaceWord;
+    
+                console.log(`User Input : ${userInput}`);
+                    console.log(`Replace The Last Character : ${replaced}`);
+    
+                
+}
 
 // 27. Write a js program to replace all occurrences of a character with another in a string.
 
@@ -679,4 +708,4 @@ function removeSpace(){
 
 
 
-// 1 ,2 ,3 ,4 ,5 ,6 ,7 ,8 ,9 ,10 ,11 ,12 ,13 ,14 ,15 ,16 ,21 ,22 ,23 ,26 ,28 ,29 ,32 ,33 ,34 ,35 ,36 ,37 ,38 = 29 Done Out Of 38
+// 1 ,2 ,3 ,4 ,5 ,6 ,7 ,8 ,9 ,10 ,11 ,12 ,13 ,14 ,15 ,16 ,17 ,21 ,22 ,23 ,25 ,26 ,28 ,29 ,32 ,33 ,34 ,35 ,36 ,37 ,38 = 31 Done Out Of 38
