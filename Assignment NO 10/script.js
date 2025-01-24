@@ -486,6 +486,22 @@ function replaceLastCharacter() {
 
 // 27. Write a js program to replace all occurrences of a character with another in a string.
 
+function replaceAllCharacter(){
+
+    let userInput = prompt('Type AnyThing');
+    let removeWord = prompt(`Enter The Word That You Want To Replace`);
+      let replaceWord = prompt(`Enter The Word That You Want To Replace With `);
+
+      replaceWith = userInput.replaceAll(removeWord , replaceWord )
+
+      console.log(`User Input ${userInput}`);
+      console.log(`Changed With ${replaceWith}`);
+      
+      
+ 
+
+}
+
 // 28. Write a js program to find first occurrence of a word in a given string.
 
 function firstOccurrence (str , word){
@@ -708,4 +724,4 @@ function removeSpace(){
 
 
 
-// 1 ,2 ,3 ,4 ,5 ,6 ,7 ,8 ,9 ,10 ,11 ,12 ,13 ,14 ,15 ,16 ,17 ,21 ,22 ,23 ,25 ,26 ,28 ,29 ,32 ,33 ,34 ,35 ,36 ,37 ,38 = 31 Done Out Of 38
+// 1 ,2 ,3 ,4 ,5 ,6 ,7 ,8 ,9 ,10 ,11 ,12 ,13 ,14 ,15 ,16 ,17 ,21 ,22 ,23 ,25 ,26 ,27 ,28 ,29 ,32 ,33 ,34 ,35 ,36 ,37 ,38 = 32 Done Out Of 38
