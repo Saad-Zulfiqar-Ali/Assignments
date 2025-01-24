@@ -494,8 +494,8 @@ function replaceAllCharacter(){
 
       replaceWith = userInput.replaceAll(removeWord , replaceWord )
 
-      console.log(`User Input ${userInput}`);
-      console.log(`Changed With ${replaceWith}`);
+      console.log(`User Input : ${userInput}`);
+      console.log(`Changed With : ${replaceWith}`);
       
       
  
